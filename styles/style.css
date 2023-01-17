@@ -5,26 +5,41 @@
     inline-size: 250px;
     text-align: center;
   }
+
 body{
     display: list-item;
 }  
+
 button{
   text-align: center;
   text-decoration-color: aquamarine;
   text-decoration: none;
 }
+
 .highlight {
   color: white;
   background-color: black;
   padding: 10px;
-  width: 250px;
+  inline-size: 250px;
   text-align: center;
 }
+
 body{
   display: list-item;
 }  
+
 button{
 text-align: center;
 text-decoration-color: aquamarine;
 text-decoration: none;
+}
+
+li {
+  margin-block-end: 10px;
+}
+
+li button {
+  font-size: 8px;
+  margin-inline-start: 20px;
+  color: #666;
 }

@@ -5,17 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>Shopping list example</title>
-    <style>
-      li {
-        margin-block-end: 10px;
-      }
-
-      li button {
-        font-size: 8px;
-        margin-inline-start: 20px;
-        color: #666;
-      }
-    </style>
+    <style></style>
   </head>
   <body>
 
@@ -33,14 +23,7 @@
       <li>Apples     <button onclick="addToCart('item3')">Add Item </button></li>
       <li>Grapes     <button onclick="addToCart('ite43')">Add Item </button></li>
     </ul>
-
-    <script>
-    let cart = [];
-    function addToCart(item) {
-      cart.push(item);
-      document.getElementById("cart").innerHTML = "Cart: " + cart.join(", ");
-    }
-    cart.appendChild(item);
-    </script>
+    
+    <script src="scripts/shoppingcart.js"></script>
   </body>
 </html>
