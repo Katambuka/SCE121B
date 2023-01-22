@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Shopping list example</title>
+    <style>
+      li {
+        margin-bottom: 10px;
+      }
+
+      li button {
+        font-size: 8px;
+        margin-left: 20px;
+        color: #666;
+      }
+    </style>
+  </head>
+  <body>
+
+    <h1>My shopping list</h1>
+
+    <div>
+      <label for="item">Enter a new item:</label>
+      <input type="text" name="item" id="item">
+      <button>Add item</button>
+    </div>
+
+    <ul>
+      <li>Mangoes    <button onclick="addToCart('item1')">Add Item </button></li>
+      <li>Oranges    <button onclick="addToCart('item2')">Add Item </button></li>
+      <li>Apples     <button onclick="addToCart('item3')">Add Item </button></li>
+      <li>Grapes     <button onclick="addToCart('ite43')">Add Item </button></li>
+    </ul>
+
+    <script>
+    let cart = [];
+    function addToCart(item) {
+      cart.push(item);
+      document.getElementById("cart").innerHTML = "Cart: " + cart.join(", ");
+    }
+    cart.appendChild(item);
+    </script>
+  </body>
+</html>
