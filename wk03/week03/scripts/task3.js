@@ -26,10 +26,6 @@ function addNumbers() {
 
 // Step 5: Add a "click" event listener to the HTML button with an ID of addNumbers that calls the addNumbers function
 document.getElementById("addNumbers").addEventListener("click", addNumbers);
-document.addEventListener("DOMContentLoaded", function() {
-    document.getElementById("addNumbers").addEventListener("click", addNumbers);
-});
-
 
 // Step 6: Using function expressions, repeat Steps 1-5 with new functions named subtract and subtractNumbers and HTML form controls with IDs of minuend, subtrahend, difference and subtractNumbers
 const subtract = function(number1, number2) { 
