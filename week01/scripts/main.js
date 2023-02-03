@@ -68,3 +68,4 @@ myImage.onclick = () => {
     para.setAttribute('class', 'highlight');
     
     ///A dynamic shopping list
+    link.textContent = 'Mozilla Developer Network';
