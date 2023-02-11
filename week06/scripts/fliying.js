@@ -89,9 +89,27 @@ function handleSubmit(event) {
   document.getElementById("result").textContent = `${amount} ${fromCurrency} is equal to ${result} ${toCurrency}`;
 }
 
+// Get the form and the result element
+const form = document.querySelector("#form");
+const result = document.querySelector("#result");
 
+// Add a submit event listener to the form
+form.addEventListener("submit", (event) => {
+  event.preventDefault();
+  // Get the values of the input elements
+  const amount = document.querySelector("#amount").value;
+  const fromCurrency = document.querySelector("#fromcurrency").value;
+  const toCurrency = document.querySelector("#tocurrency").value;
+
+  // Calculate the conversion result
+  const conversionResult = amount * exchangeRates[fromCurrency][toCurrency];
+
+  // Update the result element with the conversion result
+  result.textContent = `${amount} ${fromCurrency} is equal to ${conversionResult} ${toCurrency}`;
+});
 // Add event listener to the form to call the handleSubmit function
 document.querySelector("form").addEventListener("submit", handleSubmit);
+document.getElementById("result").innerHTML = "The converted amount is: " + convertedAmount;
 
 // Call the getExchangeRates function to retrieve the exchange rates
 getExchangeRates();
