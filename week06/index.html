@@ -1,101 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Currency Exchange </title>
-    <link href="https://fonts.googleapis.com/css?family=Kalam&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/styles.css">
-</head>
-
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>CSE 121b: Week 05 | Sample Solution</title>
+        <link href="https://fonts.googleapis.com/css?family=Kalam&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/styles.css">
+    </head>
+    
+    <body>
+        <nav>
+            <ul id="menu">
+                <li><a id="toggleMenu">&equiv;</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Lesson 2</a></li>
+                <li><a href="#">Lesson 3</a></li>
+                <li><a href="#">Lesson 4</a></li>
+                <li><a href="#" class="active">Lesson 5</a></li>
+                <li><a href="#">Lesson 6</a></li>
+            </ul>
+        </nav>
 <body>
-    <nav>
-        <ul id="menu">
-            <li><a id="toggleMenu">&equiv;</a></li>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Destinations</a></li>
-            <li><a href="#">Contact us</a></li>
-            <li><a href="#">Gallery</a></li>
-        </ul>
-    </nav>
-    <header>
-        <h1>Stay updated with our competitive rates</h1>
-    </header>
-    <main>
-        <section>
-            <h2>
-                Today is <span id="message2"></span>.
-            </h2>
-            <h3>
-                <span id="message1"></span>
-            </h3>
-        </section>
-        <hr>
-        <section>
-            <h2>Real Time Currency exchange rates </h2><hr>
-            <form>
-                <label>From:
-                  <select id="fromCurrency">
-                    <!-- Add options for each currency here -->
-                    <option value="USD">USD - US Dollar</option>
-                    <option value="EUR">EUR - Euro</option>
-                    <option value="GBP">GBP - British Pound</option>
-                    <option value="INR">INR - Indian Rupee</option>
-                    <option value="JPY">JPY - Japanese Yen</option>
-                    <option value="CAD">CAD - Canadian Dollar</option>
-                    <option value="AUD">AUD - Australian Dollar</option>
-                    <option value="CHF">CHF - Swiss Franc</option>
-                    <option value="CNY">CNY - Chinese Yuan</option>
-                    <option value="SGD">SGD - Singapore Dollar</option>
-                    <option value="HKD">HKD - Hong Kong Dollar</option>
-                    <option value="BRL">BRL - Brazilian Real</option>
-                    <option value="MXN">MXN - Mexican Peso</option>
-                    <option value="SEK">SEK - Swedish Krona</option>
-                    <option value="NOK">NOK - Norwegian Krone</option>
-                    <option value="KRW">KRW - South Korean Won</option>
-                    <option value="AED">AED - Dirham</option>
-                    <option value="UGX">UGX - Ugandan Shilling</option>
-                  </select>
-                </label>
-                <label>To:
-                  <select id="toCurrency">
-                    <!-- Add options for each currency here -->
-                    <option value="USD">USD - US Dollar</option>
-                    <option value="EUR">EUR - Euro</option>
-                    <option value="GBP">GBP - British Pound</option>
-                    <option value="INR">INR - Indian Rupee</option>
-                    <option value="JPY">JPY - Japanese Yen</option>
-                    <option value="CAD">CAD - Canadian Dollar</option>
-                    <option value="AUD">AUD - Australian Dollar</option>
-                    <option value="CHF">CHF - Swiss Franc</option>
-                    <option value="CNY">CNY - Chinese Yuan</option>
-                    <option value="SGD">SGD - Singapore Dollar</option>
-                    <option value="HKD">HKD - Hong Kong Dollar</option>
-                    <option value="BRL">BRL - Brazilian Real</option>
-                    <option value="MXN">MXN - Mexican Peso</option>
-                    <option value="SEK">SEK - Swedish Krona</option>
-                    <option value="NOK">NOK - Norwegian Krone</option>
-                    <option value="KRW">KRW - South Korean Won</option>
-                    <option value="UGX">UGX - Ugandan Shilling</option>
-                    <option value="AED">AED - Dirham</option>
-                  </select>
-                </label>
-                <label>Amount:
-                  <input type="text" id="amount">
-                </label>
-                <button type="submit">Convert</button>
-            </form>
-            <!-- Element to display the conversion result -->
-            <p id="result"></p>
-        </section>
-    </main>
-    <footer>
-        &copy;<span id="year"></span> | flellaHarst | lesson 6
-    </footer>
-    <script src="/week06/scripts/fliying.js"></script>
-   
+  <h1>Todo List Manager</h1>
+  <form>
+    <input type="text" id="task-input" placeholder="Add a task...">
+    <button type="submit">Add Task</button>
+  </form>
+  <ul id="task-list">
+  </ul>
+  <p>Total number of tasks: <span id="task-count"></span></p>
+  <script type="module" src="userInterface.js"></script>
+  <script type="module" src="taskList.js"></script>
+  <script type="module" src="inputHandler.js"></script>
+  <script src="./inputHandler.js"></script>
+  <script src="./tasklist.js"></script>
+  <script src="./userInterface.js"></script>
 </body>
-
 </html>
